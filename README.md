@@ -33,9 +33,9 @@ You can use Zeno via CDN or as a local module.
 
 ```html
 <script type="module">
-  import "./js/zeno.mjs";
+  import "./js/zeno.js";
 
-  const count = zeno.signal(5);
+  const count = Zeno.signal(5);
   console.log(count()); // 5
 ```
 

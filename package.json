@@ -4,7 +4,6 @@
   "description": "⚡ A tiny experimental declarative reactivity & islands library for the web.",
   "main": "zeno.js",
   "module": "zeno.js",
-  "types": "zeno.d.ts",
   "files": [
     "zeno.js",
     "README.md"
