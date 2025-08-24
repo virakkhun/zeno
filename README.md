@@ -12,8 +12,6 @@ Zeno is a minimal reactive micro-framework inspired by Alpine.js and Solid.js, b
 > ⚠️ Experimental, but ready to rock.
 > Zeno is lightweight, hackable, and fun to use — but it’s still evolving. Expect changes, but also expect to be productive right now.
 
----
-
 ## Getting Started
 
 You can use Zeno via CDN or as a local module.
@@ -42,8 +40,6 @@ You can use Zeno via CDN or as a local module.
 ```
 
 That’s it — no build system, no config. Just drop in a script and start writing declarative components.
-
----
 
 ## Example
 
@@ -92,8 +88,6 @@ That’s it — no build system, no config. Just drop in a script and start writ
 </script>
 ```
 
----
-
 ## Features
 
 - 🎯 Signals – fine-grained reactivity without a VDOM
@@ -101,8 +95,6 @@ That’s it — no build system, no config. Just drop in a script and start writ
 - 🧩 Declarative syntax – x-data, x-text, x-on, x-show, etc.
 - ⚡ SSR friendly – works with react-dom/server, deno, or static HTML
 - 🚫 No build required – just import a single JS module
-
----
 
 ## Why Zeno?
 
