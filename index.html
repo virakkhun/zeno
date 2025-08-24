@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Hello</title>
+  </head>
+
+  <body>
+    <div x-data="{ count: 0 }">
+      <h1 x-text="count"></h1>
+      <button x-on:click="count+=1">+</button>
+      <button x-on:click="count-=1">-</button>
+    </div>
+
+    <br />
+
+    <div x-data="{ open: false }">
+      <button x-on:click="open = !open">toggle</button>
+
+      <div x-show="open">
+        <p>Hello bro</p>
+      </div>
+    </div>
+
+    <br />
+
+    <div x-island="person" x-props="{ name: Zeno.createSignal('dara') }">
+      <div>
+        <span>Name: </span>
+        <span x-text="name()"></span>
+      </div>
+      <div>
+        <label for="name"> Input name </label>
+        <input x-ctrl="on:input:onInputChanged(ctrl.value)" id="name" />
+      </div>
+    </div>
+
+    <script type="module">
+      import "./js/zeno.js";
+
+      Zeno.define("person", (props) => {
+        return {
+          name: props.name,
+          onInputChanged(value) {
+            this.name.update(value);
+          },
+        };
+      });
+
+      Zeno.initIsland();
+    </script>
+  </body>
+</html>

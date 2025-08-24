@@ -1,0 +1,35 @@
+{
+  "name": "zeno",
+  "version": "1.0.0",
+  "description": "⚡ A tiny experimental declarative reactivity & islands library for the web.",
+  "main": "zeno.js",
+  "module": "zeno.js",
+  "types": "zeno.d.ts",
+  "files": [
+    "zeno.js",
+    "README.md"
+  ],
+  "keywords": [
+    "zeno",
+    "reactivity",
+    "islands",
+    "declarative",
+    "signals",
+    "lightweight"
+  ],
+  "author": "virakkhun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virakkhun/zeno.git"
+  },
+  "bugs": {
+    "url": "https://github.com/virakkhun/zeno/issues"
+  },
+  "homepage": "https://github.com/virakkhun/zeno#readme",
+  "scripts": {
+    "build": "echo 'No build step yet 🚧'",
+    "prepublishOnly": "pnpm run build"
+  },
+  "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
+}
