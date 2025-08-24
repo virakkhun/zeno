@@ -20,9 +20,9 @@ You can use Zeno via CDN or as a local module.
 
 ```html
 <script type="module">
-  import { zeno } from "https://unpkg.com/zenojs?module";
+  import "https://unpkg.com/@virakkhun/zeno.js";
 
-  const count = zeno.signal(0);
+  const count = Zeno.signal(0);
   console.log(count()); // 0
   count.update((v) => v + 1);
   console.log(count()); // 1
@@ -37,6 +37,7 @@ You can use Zeno via CDN or as a local module.
 
   const count = Zeno.signal(5);
   console.log(count()); // 5
+</script>
 ```
 
 That’s it — no build system, no config. Just drop in a script and start writing declarative components.
@@ -73,7 +74,7 @@ That’s it — no build system, no config. Just drop in a script and start writ
 </div>
 
 <script type="module">
-  import "./js/zeno.mjs";
+  import "./js/zeno.js";
 
   Zeno.define("person", (props) => {
     return {
