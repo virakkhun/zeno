@@ -1,5 +1,5 @@
 {
-  "name": "zeno",
+  "name": "zeno.js",
   "version": "1.0.0",
   "description": "⚡ A tiny experimental declarative reactivity & islands library for the web.",
   "main": "zeno.js",
