@@ -22,7 +22,7 @@ You can use Zeno via CDN or as a local module.
 <script type="module">
   import "https://unpkg.com/@virakkhun/zeno.js";
 
-  const count = Zeno.signal(0);
+  const count = Zeno.ceateSignal(0);
   console.log(count()); // 0
   count.update((v) => v + 1);
   console.log(count()); // 1
@@ -35,7 +35,7 @@ You can use Zeno via CDN or as a local module.
 <script type="module">
   import "./js/zeno.js";
 
-  const count = Zeno.signal(5);
+  const count = Zeno.createSignal(5);
   console.log(count()); // 5
 </script>
 ```
