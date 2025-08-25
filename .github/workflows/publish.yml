@@ -1,0 +1,29 @@
+name: publish zeno.js to npm
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  release:
+    name: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: publish
+        run: |
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
