@@ -1,7 +1,7 @@
 Deno.serve(async (req) => {
   const { pathname } = new URL(req.url);
 
-  if (pathname.includes("/js/")) {
+  if (pathname.includes(".js")) {
     const js = await Deno.readTextFile(`${Deno.cwd()}${pathname}`);
 
     return new Response(js, {

@@ -37,7 +37,7 @@
     <script type="module">
       import "https://unpkg.com/@virakkhun/zeno.js";
 
-      Zeno.define("person", (props) => {
+      const person = Zeno.define("person", (props) => {
         return {
           name: props.name,
           onInputChanged(value) {

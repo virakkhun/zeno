@@ -291,11 +291,13 @@
 
     if (isSignalDeclarations) {
       const state = factory(props);
+      factory.raw = state;
       bindTree(el, state);
       return;
     }
 
     const state = reactive(factory(props));
+    factory.raw = state;
     bindTree(el, state);
   }
 
